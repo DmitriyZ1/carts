@@ -1,0 +1,146 @@
+
+$color1: #f3d9aa;
+$color2: #75d881;
+$color3: #ff8f8f;
+
+@font-face {
+    font-family: Exo; 
+    src: url(../fonts/Exo_2.0_Bold_Italic.ttf); 
+}
+
+
+
+.forma__content{
+    
+    font-family: Exo, 'Courier New', Courier, monospace;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 40%;
+    min-width: 400px;
+    height: 520px;
+    box-shadow: 5px 5px 5px;
+    margin: auto;
+    margin-bottom: 100px;
+    form{
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        .pole{
+            position: relative;    
+            input[type="text"]{
+                width: 60%;
+                margin: 15px; 
+                font-size: 20px;
+                
+            }
+            input[type="text"]:focus{
+                outline: none !important;
+            }
+            .formname{
+                font-size: 17px;
+                color: #787878;
+                position: absolute;
+                left: 20%;
+                bottom: 76%;
+                
+            }
+            .er{
+                color: red;
+                position: absolute;
+                top: 22px;
+                right: 15px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 13px;
+            }
+        }
+        .polesex{
+            font-size: 20px;
+            margin-top: 20px;
+            label{
+                font-size: 20px;
+                color: #787878; 
+                
+            }
+        }
+    }
+    .colors{
+        position: relative;
+        font-size: 25px;
+        cursor: pointer;
+        span{
+            position: absolute;
+            text-decoration: underline;
+            right: 20px;
+            top: 10px;
+            color: #7579ef;
+            user-select: none;
+            &:hover{
+                color: #434691;
+                text-decoration: none;            }
+        }    
+        .colorsitems{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 50px;
+            height: 150px;
+            right: 20px;
+            top: 60px;
+            border: 1px solid black;
+            box-sizing: content-box;
+            opacity: 1;
+            z-index: 1000;
+            box-shadow: 3px 3px 3px;
+            .colit{
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+            }
+            .coloractiv{
+                border: 3px solid #ff00f6;
+                box-sizing: border-box;
+
+            }
+        }
+    }
+    
+    .knopkaPush {
+        font-family: 'arial';
+        color: #fff; 
+        text-decoration: none; 
+        user-select: none; 
+        background: rgb(212,75,56); 
+        padding: .2em .5em; 
+        margin:2px;
+        box-shadow: 2px 2px 2px black;
+        outline: none; 
+      } 
+    .knopkaPush:hover { background: rgb(232,95,76); cursor: pointer; } 
+    .knopkaPush:active { background: rgb(152,15,0); } 
+      
+    .errorinput{
+        border-color: red;
+    } 
+}
+
+@media(max-width: 1500px){
+    .er{
+        display: none;
+    }
+}
+
+
+.color1{
+    background: $color1;
+};
+.color2{
+    background: $color2;
+};
+.color3{
+    background: $color3;
+};
+
+
+  
+  

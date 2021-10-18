@@ -1,0 +1,53 @@
+
+.picphoto{
+    position: relative;
+    margin-top: 20px;
+    &__pic{
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        cursor: pointer;
+        img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            
+        }
+    }
+    &__pics{
+        .activpic{
+            border: 3px solid #ff00f6;
+        }
+        img {
+            width: 120px;
+            height: 120px
+        }
+        ul{
+            display: flex;
+            position: absolute;
+            left: 5%;
+            top: -14px;
+            li{
+                cursor: pointer;
+                list-style-type: none;                
+                img{
+                    border: 1px solid rgb(255, 254, 254);
+                    box-sizing: border-box;
+                    list-style-type: none;
+                    box-shadow: 3px 3px 3px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media(max-width: 1500px){
+    
+}
+

@@ -1,0 +1,28 @@
+
+
+.App {
+  text-align: center;
+}
+
+.head{
+  height: 70px;
+  background: #291e1e;
+}
+
+.logotipe{
+  display: flex;
+  width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logospan{
+  font-weight: 800;
+  font-size: 40px;
+  color: wheat;
+}
+
+.footer{
+  height: 300px;
+  background: gray;
+}

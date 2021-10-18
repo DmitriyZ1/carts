@@ -1,0 +1,16 @@
+{"filepic":
+    [
+        {"file":"1.jpg", "pic": 1},
+        {"file":"2.jpg", "pic": 2},
+        {"file":"3.jpg", "pic": 3},
+        {"file":"4.jpg", "pic": 4}
+    ],
+"gender" :
+    [
+        {"gen":"male", "format":"муж"},
+        {"gen": "female", "format":"жен"}
+    ],
+"url" : {
+    "host1": "http://localhost:3500"
+    }
+}

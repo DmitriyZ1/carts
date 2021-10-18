@@ -1,0 +1,141 @@
+$color1: #f3d9aa;
+$color2: #75d881;
+$color3: #ff8f8f;
+
+@font-face {
+  font-family: Exo; 
+  src: url(../fonts/Exo_2.0_Bold_Italic.ttf); 
+}
+@font-face {
+  font-family: Segeo; 
+  src: url(../fonts/Segoe_Print.ttf); 
+}
+
+span.knopkaPlus{
+    color: #fff; 
+    font-size: 20px;
+    text-decoration: none; 
+    user-select: none; 
+    background: rgb(212,75,56); 
+    padding: .5em 4.5em; 
+    margin: 2px;
+    box-shadow: 2px 2px 2px black;
+    outline: none; 
+  } 
+  span.knopkaPlus:hover { background: rgb(232,95,76);  cursor: pointer;} /* при наведении курсора мышки */
+  span.knopkaPlus:active { background: rgb(152,15,0); } /* при нажатии */
+
+.contain{
+    width: 70%;
+    margin: 35px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+    .cart{
+        font-family: Exo, 'Courier New', Courier, monospace;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 250px;
+        margin: 5px;
+        position: relative;
+        min-height: 423px;
+        box-shadow: 2px 2px 4px;
+        .cart__icon{
+            margin: 10px;
+        }
+        .date{
+          left: 5px;
+          position: absolute;
+          span{
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#9b9b9b;
+          }
+          
+        }
+       img{
+           border: 1px solid black;
+           box-shadow: 2px 2px 2px;
+       }
+       span{
+        font-family: Segeo, 'mv boli', 'ms serif';  
+       }
+       span.knopka {
+        font-family: 'arial';
+        color: #fff; /* цвет текста */
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        background: rgb(212,75,56); /* фон кнопки */
+        padding: .2em .5em; /* отступ от текста */
+        margin:2px;
+        box-shadow: 2px 2px 2px black;
+        outline: none; /* убирать контур в Mozilla */
+      } 
+      span.knopka:hover { background: rgb(232,95,76); cursor: pointer; } /* при наведении курсора мышки */
+      span.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+    }
+    
+    .load{
+      height: 500px;
+      .cartload {
+        animation:spin 1s infinite linear;
+        border:solid 2vmin transparent;
+        border-radius:50%;
+        border-right-color:#a19f9e;
+        border-top-color:#a19f9e;
+        box-sizing:border-box;
+        height:20vmin;
+        left:calc(50% - 10vmin);
+        position:fixed;
+        top:calc(50% - 10vmin);
+        width:20vmin;
+        z-index:1;
+        &:before {
+          animation:spin 2s infinite linear;
+          border:solid 2vmin transparent;
+          border-radius:50%;
+          border-right-color:#a19f9e;
+          border-top-color:#a19f9e;
+          box-sizing:border-box;
+          content:"";
+          height:16vmin;
+          left:0;
+          position:absolute;
+          top:0;
+          width:16vmin;
+        }
+        &:after {
+          animation:spin 3s infinite linear;
+          border:solid 2vmin transparent;
+          border-radius:50%;
+          border-right-color:#a19f9e;
+          border-top-color:#a19f9e;
+          box-sizing:border-box;
+          content:"";
+          height:12vmin;
+          left:2vmin;
+          position:absolute;
+          top:2vmin;
+          width:12vmin;
+        }
+      }
+      @keyframes spin {
+        100% {
+          transform:rotate(360deg);
+        }
+      }
+    }
+}
+
+.color1{
+  background: $color1;
+};
+.color2{
+  background: $color2;
+};
+.color3{
+  background: $color3;
+};
+
